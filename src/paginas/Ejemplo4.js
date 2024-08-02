@@ -11,12 +11,10 @@ const CargaJson = (props) => {
             <ul>
                 {
                     alumnos.map(alumno =>(
-                        <li>{alumno.nombre} {alumno.apellido} - {alumno.edad}</li>
+                        <li key={alumno.id}>{alumno.id} : {alumno.nombre} {alumno.apellido} - {alumno.edad}</li>
                     ))
                 }
-
             </ul>
-            
         </>
     )
 }
