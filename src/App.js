@@ -12,6 +12,7 @@ import Ejemplo2 from './paginas/Ejemplo2';
 import Ejemplo3 from './paginas/Ejemplo3';
 import CargaJson from './paginas/Ejemplo4';
 import DatosApi from './paginas/Ejemplo5';
+import Yapa from './paginas/Yapa';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/ejemplo3' element={<Ejemplo3 />} />
           <Route path='/ejemplo4' element={<CargaJson />} />
           <Route path='/ejemplo5' element={<DatosApi />} />
+          <Route path='/yapa' element={<Yapa />} />
           {/* aca van los links */}
         </Routes>
       </BrowserRouter>

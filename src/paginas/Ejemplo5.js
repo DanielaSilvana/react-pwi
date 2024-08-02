@@ -23,19 +23,23 @@ const DatosApi = (props) => {
         <>
             <h1>Carga de datos a través de una API</h1>
 
-            {cargando ? <p>Cargando...</p> : (
+            {cargando ? <p>Cargando datos...</p> : (
+
                 <div className="personajes">
 
                     {personajes.map(personaje => (
-                    <div className="personaje">
-                        <h4>Nombre PERSONAJE</h4>
+                        
+                    <div className="personaje" key={personaje.id}>
+                        <h3>{personaje.id}</h3>
+                        <h4>{personaje.name}</h4>
                         <div className="ficha">
                             <div className="foto">
-                                <img src="https://fakeimg.pl/150x100" alt="" />
+                                <img src={personaje.image} alt={personaje.name} />
                             </div>
                             <div className="datos">
-                                <h6>Especie: HUMANO o NO</h6>
-                                <h6>Vivo: SI O NO</h6>
+                                <h6>Especie:{personaje.species === 'Human' ? ' Humano' : ' Extraterrestre'}</h6>
+                                <h6>Estado: {personaje.status === 'Alive' ? 'Vivo' : 'Muerto'}</h6>
+                                {/* op tern */}
                             </div>
                         </div>
                     </div>

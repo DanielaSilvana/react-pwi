@@ -1,0 +1,17 @@
+.yapa{
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    color: #00B6CD;
+    font-family: 'Schwifty';
+    /* text-shadow: black rgba(0, 0, 0, 0.5); */
+    /* background-color: #B3E023; */
+    padding: 10px;
+    background-image: url('../../rick-and-morty-vaporwave-art-ex.jpg');
+    
+}
+
+@font-face {
+    font-family: 'Schwifty';
+    src: url(/get_schwifty.ttf);
+}
