@@ -22,3 +22,13 @@
     font-family: 'Schwifty';
     src: url(/get_schwifty.ttf);
 }
+
+@font-face {
+    font-family: 'Special Elite';
+    src: url(/SpecialElite-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gembool';
+    src: url(/Gembool.ttf);
+}
